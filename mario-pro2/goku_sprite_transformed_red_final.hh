@@ -1,0 +1,800 @@
+#ifndef GOKU_SPRITE_RED_HH
+#define GOKU_SPRITE_RED_HH
+#include <vector>
+using namespace std;
+const int COLOR_0 = 0x404040;
+const int COLOR_1 = 0x413F43;
+const int COLOR_2 = 0x473D34;
+const int COLOR_3 = 0x413E3F;
+const int COLOR_4 = 0x3D3B3D;
+const int COLOR_5 = 0x785F30;
+const int COLOR_6 = 0x443E30;
+const int COLOR_7 = 0x3E393A;
+const int COLOR_8 = 0x3D4343;
+const int COLOR_9 = 0x433E46;
+const int COLOR_10 = 0x404537;
+const int COLOR_11 = 0x8D624B;
+const int COLOR_12 = 0x825D0F;
+const int COLOR_13 = 0x414040;
+const int COLOR_14 = 0x403E43;
+const int COLOR_15 = 0x42403A;
+const int COLOR_16 = 0x393E49;
+const int COLOR_17 = 0x7A5C30;
+const int COLOR_18 = 0x503116;
+const int COLOR_19 = 0x4D381A;
+const int COLOR_20 = 0xFFDF57;
+const int COLOR_21 = 0x613300;
+const int COLOR_22 = 0x453828;
+const int COLOR_23 = 0x42371B;
+const int COLOR_24 = 0x403D3D;
+const int COLOR_25 = 0x3B403A;
+const int COLOR_26 = 0x7C5C1C;
+const int COLOR_27 = 0xFFE154;
+const int COLOR_28 = 0x7F510F;
+const int COLOR_29 = 0xFFFFCD;
+const int COLOR_30 = 0xFFEC33;
+const int COLOR_31 = 0x7B5A30;
+const int COLOR_32 = 0x6F500B;
+const int COLOR_33 = 0x493C3C;
+const int COLOR_34 = 0x3B4047;
+const int COLOR_35 = 0x40403E;
+const int COLOR_36 = 0x413F40;
+const int COLOR_37 = 0x454325;
+const int COLOR_38 = 0xDFA04C;
+const int COLOR_39 = 0x875B0A;
+const int COLOR_40 = 0x753300;
+const int COLOR_41 = 0xFFFADF;
+const int COLOR_42 = 0xFFFEF1;
+const int COLOR_43 = 0xDE9C5B;
+const int COLOR_44 = 0xE9B525;
+const int COLOR_45 = 0x7D550D;
+const int COLOR_46 = 0x3E3E3F;
+const int COLOR_47 = 0x41403C;
+const int COLOR_48 = 0x3D4144;
+const int COLOR_49 = 0x3C433D;
+const int COLOR_50 = 0x3D423D;
+const int COLOR_51 = 0x483934;
+const int COLOR_52 = 0x423D31;
+const int COLOR_53 = 0x403E3F;
+const int COLOR_54 = 0x4C301B;
+const int COLOR_55 = 0xEDC43F;
+const int COLOR_56 = 0x6E3800;
+const int COLOR_57 = 0x733600;
+const int COLOR_58 = 0xFFF8E5;
+const int COLOR_59 = 0xFFFFDB;
+const int COLOR_60 = 0xF3E64E;
+const int COLOR_61 = 0xFFFEF9;
+const int COLOR_62 = 0x623000;
+const int COLOR_63 = 0x483726;
+const int COLOR_64 = 0x3C4142;
+const int COLOR_65 = 0x453F3A;
+const int COLOR_66 = 0x433A2B;
+const int COLOR_67 = 0x403F43;
+const int COLOR_68 = 0x494134;
+const int COLOR_69 = 0x80510C;
+const int COLOR_70 = 0x504025;
+const int COLOR_71 = 0x855B00;
+const int COLOR_72 = 0xFFF0AE;
+const int COLOR_73 = 0xFFFB2C;
+const int COLOR_74 = 0x693600;
+const int COLOR_75 = 0xFFF8B1;
+const int COLOR_76 = 0xFFFFD3;
+const int COLOR_77 = 0xFEFB40;
+const int COLOR_78 = 0xFFFD29;
+const int COLOR_79 = 0xF8F3DC;
+const int COLOR_80 = 0x7E5B2A;
+const int COLOR_81 = 0x383836;
+const int COLOR_82 = 0x80591E;
+const int COLOR_83 = 0x513515;
+const int COLOR_84 = 0x3E4045;
+const int COLOR_85 = 0x3C4143;
+const int COLOR_86 = 0x43403C;
+const int COLOR_87 = 0x423F41;
+const int COLOR_88 = 0x41403E;
+const int COLOR_89 = 0xFFD164;
+const int COLOR_90 = 0x764400;
+const int COLOR_91 = 0x794305;
+const int COLOR_92 = 0xFEFFA8;
+const int COLOR_93 = 0xFBFF38;
+const int COLOR_94 = 0x5A2900;
+const int COLOR_95 = 0xFFFCC6;
+const int COLOR_96 = 0xFEFEFF;
+const int COLOR_97 = 0xFFFFB8;
+const int COLOR_98 = 0xE18E2F;
+const int COLOR_99 = 0xFFFFE6;
+const int COLOR_100 = 0xFFD44B;
+const int COLOR_101 = 0x945A25;
+const int COLOR_102 = 0xE7B62C;
+const int COLOR_103 = 0x4D3815;
+const int COLOR_104 = 0x3F4042;
+const int COLOR_105 = 0x3F4046;
+const int COLOR_106 = 0x413E45;
+const int COLOR_107 = 0x3E4142;
+const int COLOR_108 = 0x443E37;
+const int COLOR_109 = 0xF4AF59;
+const int COLOR_110 = 0x8E5400;
+const int COLOR_111 = 0xE6BF12;
+const int COLOR_112 = 0xF6FEB3;
+const int COLOR_113 = 0xFDFFEF;
+const int COLOR_114 = 0xFFF716;
+const int COLOR_115 = 0xFFF0BF;
+const int COLOR_116 = 0xF9FDFD;
+const int COLOR_117 = 0xFFFFDF;
+const int COLOR_118 = 0xCC953C;
+const int COLOR_119 = 0xFBFAFF;
+const int COLOR_120 = 0xFFFFB4;
+const int COLOR_121 = 0xD38519;
+const int COLOR_122 = 0xD28A34;
+const int COLOR_123 = 0x3D423B;
+const int COLOR_124 = 0x413F42;
+const int COLOR_125 = 0x79581B;
+const int COLOR_126 = 0x7A5200;
+const int COLOR_127 = 0x8B541A;
+const int COLOR_128 = 0x804D07;
+const int COLOR_129 = 0xDD862D;
+const int COLOR_130 = 0xFFF1C1;
+const int COLOR_131 = 0xFFFF0B;
+const int COLOR_132 = 0xD8B800;
+const int COLOR_133 = 0xFFFE05;
+const int COLOR_134 = 0xE9E653;
+const int COLOR_135 = 0xD1884C;
+const int COLOR_136 = 0xF4FF06;
+const int COLOR_137 = 0xFFF21E;
+const int COLOR_138 = 0xE18C3B;
+const int COLOR_139 = 0xD68B30;
+const int COLOR_140 = 0x423F3D;
+const int COLOR_141 = 0x4A4138;
+const int COLOR_142 = 0x785A13;
+const int COLOR_143 = 0xFFFF35;
+const int COLOR_144 = 0xFFFE0B;
+const int COLOR_145 = 0xF3B917;
+const int COLOR_146 = 0xFFFE78;
+const int COLOR_147 = 0xEFB80C;
+const int COLOR_148 = 0xF3CD02;
+const int COLOR_149 = 0xD5922A;
+const int COLOR_150 = 0xFFFF1C;
+const int COLOR_151 = 0xDEAF00;
+const int COLOR_152 = 0xB2703C;
+const int COLOR_153 = 0x300600;
+const int COLOR_154 = 0xDF8422;
+const int COLOR_155 = 0xE5A75C;
+const int COLOR_156 = 0x4E3D24;
+const int COLOR_157 = 0x40403F;
+const int COLOR_158 = 0x423E43;
+const int COLOR_159 = 0x3E423C;
+const int COLOR_160 = 0x444551;
+const int COLOR_161 = 0x83532D;
+const int COLOR_162 = 0xCA9233;
+const int COLOR_163 = 0x634814;
+const int COLOR_164 = 0x2E1800;
+const int COLOR_165 = 0xFDF739;
+const int COLOR_166 = 0x7B3F0B;
+const int COLOR_167 = 0x7B4B0B;
+const int COLOR_168 = 0x874A01;
+const int COLOR_169 = 0xDF9B4A;
+const int COLOR_170 = 0xDD913C;
+const int COLOR_171 = 0xFCBF25;
+const int COLOR_172 = 0xF3F370;
+const int COLOR_173 = 0x705612;
+const int COLOR_174 = 0x4D3B3E;
+const int COLOR_175 = 0x3F413F;
+const int COLOR_176 = 0x423F40;
+const int COLOR_177 = 0x3F4238;
+const int COLOR_178 = 0x413E3C;
+const int COLOR_179 = 0x48403C;
+const int COLOR_180 = 0x745E2D;
+const int COLOR_181 = 0x8A4A04;
+const int COLOR_182 = 0x7B4508;
+const int COLOR_183 = 0x351800;
+const int COLOR_184 = 0xCE8540;
+const int COLOR_185 = 0x732F00;
+const int COLOR_186 = 0xFFE08B;
+const int COLOR_187 = 0xDA914B;
+const int COLOR_188 = 0x7F3F00;
+const int COLOR_189 = 0x8A4B12;
+const int COLOR_190 = 0x7F4504;
+const int COLOR_191 = 0xB98C02;
+const int COLOR_192 = 0x7D5300;
+const int COLOR_193 = 0x464132;
+const int COLOR_194 = 0x404139;
+const int COLOR_195 = 0x423E47;
+const int COLOR_196 = 0x424134;
+const int COLOR_197 = 0x40403D;
+const int COLOR_198 = 0x3E4043;
+const int COLOR_199 = 0x413D38;
+const int COLOR_200 = 0x4E281E;
+const int COLOR_201 = 0x834F00;
+const int COLOR_202 = 0xE08E54;
+const int COLOR_203 = 0xE99E57;
+const int COLOR_204 = 0x100100;
+const int COLOR_205 = 0x7C4003;
+const int COLOR_206 = 0xF6DBB6;
+const int COLOR_207 = 0x0F0500;
+const int COLOR_208 = 0xD78B4F;
+const int COLOR_209 = 0xFBC890;
+const int COLOR_210 = 0xD69947;
+const int COLOR_211 = 0x100000;
+const int COLOR_212 = 0x180000;
+const int COLOR_213 = 0xDB8A43;
+const int COLOR_214 = 0x7A4D15;
+const int COLOR_215 = 0x41403D;
+const int COLOR_216 = 0x3E4143;
+const int COLOR_217 = 0x473E3F;
+const int COLOR_218 = 0x473B35;
+const int COLOR_219 = 0x804B1F;
+const int COLOR_220 = 0xCE8B46;
+const int COLOR_221 = 0x110000;
+const int COLOR_222 = 0xB48057;
+const int COLOR_223 = 0x000209;
+const int COLOR_224 = 0x0D0000;
+const int COLOR_225 = 0x732E00;
+const int COLOR_226 = 0x0B0100;
+const int COLOR_227 = 0x040900;
+const int COLOR_228 = 0x74622A;
+const int COLOR_229 = 0x784600;
+const int COLOR_230 = 0x724E1C;
+const int COLOR_231 = 0x3B4241;
+const int COLOR_232 = 0x3F413D;
+const int COLOR_233 = 0x3F4240;
+const int COLOR_234 = 0x403B36;
+const int COLOR_235 = 0x705637;
+const int COLOR_236 = 0xECEBCB;
+const int COLOR_237 = 0xFE9A45;
+const int COLOR_238 = 0xA5794D;
+const int COLOR_239 = 0x114200;
+const int COLOR_240 = 0xC9A291;
+const int COLOR_241 = 0xC47C3A;
+const int COLOR_242 = 0xF8D3BE;
+const int COLOR_243 = 0x05090A;
+const int COLOR_244 = 0x3A3F3B;
+const int COLOR_245 = 0x7C5B3C;
+const int COLOR_246 = 0x3F3E41;
+const int COLOR_247 = 0x3E3D3B;
+const int COLOR_248 = 0x000100;
+const int COLOR_249 = 0x050100;
+const int COLOR_250 = 0x010200;
+const int COLOR_251 = 0xBC812A;
+const int COLOR_252 = 0xFECF88;
+const int COLOR_253 = 0xEAD490;
+const int COLOR_254 = 0xFCEAC4;
+const int COLOR_255 = 0xEEAA58;
+const int COLOR_256 = 0x030000;
+const int COLOR_257 = 0x3F3E3E;
+const int COLOR_258 = 0x3D3D3E;
+const int COLOR_259 = 0x3F3F41;
+const int COLOR_260 = 0x01000F;
+const int COLOR_261 = 0x000989;
+const int COLOR_262 = 0x1F4AE0;
+const int COLOR_263 = 0xBC8E61;
+const int COLOR_264 = 0xBB5521;
+const int COLOR_265 = 0x160000;
+const int COLOR_266 = 0xFFD679;
+const int COLOR_267 = 0x804D1F;
+const int COLOR_268 = 0x884100;
+const int COLOR_269 = 0x131507;
+const int COLOR_270 = 0x050200;
+const int COLOR_271 = 0x02030F;
+const int COLOR_272 = 0x3F3F45;
+const int COLOR_273 = 0x3F4038;
+const int COLOR_274 = 0x3E3F4A;
+const int COLOR_275 = 0x00000D;
+const int COLOR_276 = 0x4258CE;
+const int COLOR_277 = 0x220030;
+const int COLOR_278 = 0xFFB749;
+const int COLOR_279 = 0x020A00;
+const int COLOR_280 = 0xDCAB7B;
+const int COLOR_281 = 0xF5DBB1;
+const int COLOR_282 = 0xFFFECB;
+const int COLOR_283 = 0xF7DBC7;
+const int COLOR_284 = 0xBE8538;
+const int COLOR_285 = 0x060000;
+const int COLOR_286 = 0x000019;
+const int COLOR_287 = 0x00003E;
+const int COLOR_288 = 0x545355;
+const int COLOR_289 = 0x3F4041;
+const int COLOR_290 = 0x020100;
+const int COLOR_291 = 0x0D0709;
+const int COLOR_292 = 0xF2B400;
+const int COLOR_293 = 0x1E0016;
+const int COLOR_294 = 0x04008B;
+const int COLOR_295 = 0xDECAB1;
+const int COLOR_296 = 0x0A06A0;
+const int COLOR_297 = 0x130865;
+const int COLOR_298 = 0xFFE68E;
+const int COLOR_299 = 0xD09B55;
+const int COLOR_300 = 0x885C1E;
+const int COLOR_301 = 0xDABA88;
+const int COLOR_302 = 0x000514;
+const int COLOR_303 = 0x090601;
+const int COLOR_304 = 0x3D3E3F;
+const int COLOR_305 = 0x010000;
+const int COLOR_306 = 0x080204;
+const int COLOR_307 = 0xFFB703;
+const int COLOR_308 = 0x00020A;
+const int COLOR_309 = 0x000095;
+const int COLOR_310 = 0x0300AD;
+const int COLOR_311 = 0x000E94;
+const int COLOR_312 = 0xFAB825;
+const int COLOR_313 = 0xFFEAA0;
+const int COLOR_314 = 0x100F00;
+const int COLOR_315 = 0xD79E56;
+const int COLOR_316 = 0xE7C598;
+const int COLOR_317 = 0x101111;
+const int COLOR_318 = 0x3E3E3E;
+const int COLOR_319 = 0x353A3F;
+const int COLOR_320 = 0x3C3335;
+const int COLOR_321 = 0x3D3F35;
+const int COLOR_322 = 0x110802;
+const int COLOR_323 = 0xC15E01;
+const int COLOR_324 = 0x030028;
+const int COLOR_325 = 0x000896;
+const int COLOR_326 = 0x10326F;
+const int COLOR_327 = 0xFFC73B;
+const int COLOR_328 = 0xA14400;
+const int COLOR_329 = 0xB86412;
+const int COLOR_330 = 0x0A0000;
+const int COLOR_331 = 0x0C0000;
+const int COLOR_332 = 0x000500;
+const int COLOR_333 = 0x0E0000;
+const int COLOR_334 = 0x2F59CE;
+const int COLOR_335 = 0x000227;
+const int COLOR_336 = 0x3F4449;
+const int COLOR_337 = 0x3F3739;
+const int COLOR_338 = 0x3C4146;
+const int COLOR_339 = 0x100302;
+const int COLOR_340 = 0x575D6B;
+const int COLOR_341 = 0x9A3D08;
+const int COLOR_342 = 0xC1671B;
+const int COLOR_343 = 0x140155;
+const int COLOR_344 = 0xF9C046;
+const int COLOR_345 = 0xC25E0F;
+const int COLOR_346 = 0x983908;
+const int COLOR_347 = 0xB15500;
+const int COLOR_348 = 0xAC5D19;
+const int COLOR_349 = 0x0A0A00;
+const int COLOR_350 = 0x8A7252;
+const int COLOR_351 = 0x05047D;
+const int COLOR_352 = 0x2755D8;
+const int COLOR_353 = 0xE1C39F;
+const int COLOR_354 = 0x130305;
+const int COLOR_355 = 0x343E3F;
+const int COLOR_356 = 0x5B5150;
+const int COLOR_357 = 0x3E433E;
+const int COLOR_358 = 0x110300;
+const int COLOR_359 = 0xFFF9D0;
+const int COLOR_360 = 0x280700;
+const int COLOR_361 = 0xFBFFFF;
+const int COLOR_362 = 0x090000;
+const int COLOR_363 = 0xC25615;
+const int COLOR_364 = 0xFFCB44;
+const int COLOR_365 = 0xB35800;
+const int COLOR_366 = 0xAF560B;
+const int COLOR_367 = 0xA13C00;
+const int COLOR_368 = 0xB85600;
+const int COLOR_369 = 0xC5631A;
+const int COLOR_370 = 0x996A3C;
+const int COLOR_371 = 0x000000;
+const int COLOR_372 = 0xFFD692;
+const int COLOR_373 = 0xFFD293;
+const int COLOR_374 = 0xAC8633;
+const int COLOR_375 = 0x060003;
+const int COLOR_376 = 0x453444;
+const int COLOR_377 = 0x712A00;
+const int COLOR_378 = 0xFFF8D1;
+const int COLOR_379 = 0x080100;
+const int COLOR_380 = 0x160470;
+const int COLOR_381 = 0x1B0802;
+const int COLOR_382 = 0x250000;
+const int COLOR_383 = 0x090100;
+const int COLOR_384 = 0x0F0000;
+const int COLOR_385 = 0x170000;
+const int COLOR_386 = 0xC95C13;
+const int COLOR_387 = 0x5B5256;
+const int COLOR_388 = 0x474948;
+const int COLOR_389 = 0x545956;
+const int COLOR_390 = 0x1C0000;
+const int COLOR_391 = 0x6C2500;
+const int COLOR_392 = 0xF2CFA1;
+const int COLOR_393 = 0x000600;
+const int COLOR_394 = 0x38412F;
+const int COLOR_395 = 0x504C5E;
+const int COLOR_396 = 0xD2CFAA;
+const int COLOR_397 = 0x8F5126;
+const int COLOR_398 = 0x7E4200;
+const int COLOR_399 = 0x17007C;
+const int COLOR_400 = 0x725218;
+const int COLOR_401 = 0x00015C;
+const int COLOR_402 = 0x0A009F;
+const int COLOR_403 = 0x050297;
+const int COLOR_404 = 0x03058E;
+const int COLOR_405 = 0x050274;
+const int COLOR_406 = 0x0E0C17;
+const int COLOR_407 = 0x363634;
+const int COLOR_408 = 0x3F4040;
+const int COLOR_409 = 0x44413C;
+const int COLOR_410 = 0x3B3F40;
+const int COLOR_411 = 0x4A4844;
+const int COLOR_412 = 0x040B02;
+const int COLOR_413 = 0x0F110F;
+const int COLOR_414 = 0x373338;
+const int COLOR_415 = 0x3E3D4B;
+const int COLOR_416 = 0x424039;
+const int COLOR_417 = 0x040404;
+const int COLOR_418 = 0xFFFEC8;
+const int COLOR_419 = 0x140E70;
+const int COLOR_420 = 0x8F7D53;
+const int COLOR_421 = 0x140700;
+const int COLOR_422 = 0x555A55;
+const int COLOR_423 = 0x3F3C3D;
+const int COLOR_424 = 0x404241;
+const int COLOR_425 = 0x3D3F3E;
+const int COLOR_426 = 0x443F42;
+const int COLOR_427 = 0x39423F;
+const int COLOR_428 = 0x433F3C;
+const int COLOR_429 = 0x394342;
+const int COLOR_430 = 0x3C4746;
+const int COLOR_431 = 0x100110;
+const int COLOR_432 = 0x0D0F05;
+const int COLOR_433 = 0x9F3E0C;
+const int COLOR_434 = 0xFFB832;
+const int COLOR_435 = 0xEFB917;
+const int COLOR_436 = 0xBF600E;
+const int COLOR_437 = 0xBF5613;
+const int COLOR_438 = 0x9C3A00;
+const int COLOR_439 = 0xBE5B06;
+const int COLOR_440 = 0xFFBF47;
+const int COLOR_441 = 0xB16005;
+const int COLOR_442 = 0xEAB200;
+const int COLOR_443 = 0x303236;
+const int COLOR_444 = 0x3C3D48;
+const int COLOR_445 = 0x433F41;
+const int COLOR_446 = 0x453F39;
+const int COLOR_447 = 0x3B4646;
+const int COLOR_448 = 0x0B0000;
+const int COLOR_449 = 0x1F0000;
+const int COLOR_450 = 0x954800;
+const int COLOR_451 = 0xF4AB00;
+const int COLOR_452 = 0xF2B300;
+const int COLOR_453 = 0xFFBF15;
+const int COLOR_454 = 0xFEB203;
+const int COLOR_455 = 0xFAB01D;
+const int COLOR_456 = 0xB65A00;
+const int COLOR_457 = 0xA03B06;
+const int COLOR_458 = 0x9C4600;
+const int COLOR_459 = 0xFBB608;
+const int COLOR_460 = 0xFFB509;
+const int COLOR_461 = 0xFFB901;
+const int COLOR_462 = 0xA6661E;
+const int COLOR_463 = 0x251016;
+const int COLOR_464 = 0x090004;
+const int COLOR_465 = 0x3E3F49;
+const int COLOR_466 = 0x515661;
+const int COLOR_467 = 0x130000;
+const int COLOR_468 = 0xFFD66F;
+const int COLOR_469 = 0xFFB906;
+const int COLOR_470 = 0xFFAB2F;
+const int COLOR_471 = 0xA94C00;
+const int COLOR_472 = 0xF2AF00;
+const int COLOR_473 = 0xFFBC1B;
+const int COLOR_474 = 0xAB5700;
+const int COLOR_475 = 0x7A2100;
+const int COLOR_476 = 0xFFCB51;
+const int COLOR_477 = 0x973F00;
+const int COLOR_478 = 0xA44F00;
+const int COLOR_479 = 0x8C4300;
+const int COLOR_480 = 0xFBB500;
+const int COLOR_481 = 0xF7B800;
+const int COLOR_482 = 0xF7A608;
+const int COLOR_483 = 0xFCB20A;
+const int COLOR_484 = 0xFFCB39;
+const int COLOR_485 = 0x404145;
+const int COLOR_486 = 0x3D4143;
+const int COLOR_487 = 0x3E413D;
+const int COLOR_488 = 0x414142;
+const int COLOR_489 = 0x3D3F4B;
+const int COLOR_490 = 0x1F0800;
+const int COLOR_491 = 0xB14900;
+const int COLOR_492 = 0xF8B106;
+const int COLOR_493 = 0xFABB00;
+const int COLOR_494 = 0xBD6405;
+const int COLOR_495 = 0xAE5500;
+const int COLOR_496 = 0xFFC848;
+const int COLOR_497 = 0xFBB30F;
+const int COLOR_498 = 0xBE5D0D;
+const int COLOR_499 = 0xBA5116;
+const int COLOR_500 = 0xBB5802;
+const int COLOR_501 = 0x952C00;
+const int COLOR_502 = 0x872D00;
+const int COLOR_503 = 0xB25006;
+const int COLOR_504 = 0x954300;
+const int COLOR_505 = 0xF0B405;
+const int COLOR_506 = 0xF9B002;
+const int COLOR_507 = 0xFDB508;
+const int COLOR_508 = 0xEFC101;
+const int COLOR_509 = 0x00000C;
+const int COLOR_510 = 0x4C3D43;
+const int COLOR_511 = 0x2C3C37;
+const int COLOR_512 = 0x483D39;
+const int COLOR_513 = 0x404340;
+const int COLOR_514 = 0x090C00;
+const int COLOR_515 = 0xA53000;
+const int COLOR_516 = 0xAD5300;
+const int COLOR_517 = 0xAB4F00;
+const int COLOR_518 = 0xA24E00;
+const int COLOR_519 = 0xFFD040;
+const int COLOR_520 = 0xFFCD4A;
+const int COLOR_521 = 0xBB5A11;
+const int COLOR_522 = 0xB77436;
+const int COLOR_523 = 0xCC8148;
+const int COLOR_524 = 0x985531;
+const int COLOR_525 = 0x0B0200;
+const int COLOR_526 = 0x06040E;
+const int COLOR_527 = 0x8B624F;
+const int COLOR_528 = 0x993900;
+const int COLOR_529 = 0x7C1E00;
+const int COLOR_530 = 0x994800;
+const int COLOR_531 = 0xEFA301;
+const int COLOR_532 = 0xFFB600;
+const int COLOR_533 = 0x863300;
+const int COLOR_534 = 0x080000;
+const int COLOR_535 = 0x190000;
+const int COLOR_536 = 0x514C57;
+const int COLOR_537 = 0x41403F;
+const int COLOR_538 = 0x3B4242;
+const int COLOR_539 = 0x0B0500;
+const int COLOR_540 = 0x934518;
+const int COLOR_541 = 0xC4610C;
+const int COLOR_542 = 0xB75805;
+const int COLOR_543 = 0xB95900;
+const int COLOR_544 = 0xC15A07;
+const int COLOR_545 = 0x973400;
+const int COLOR_546 = 0x87411E;
+const int COLOR_547 = 0x0E080C;
+const int COLOR_548 = 0x373D32;
+const int COLOR_549 = 0x45393D;
+const int COLOR_550 = 0x3C3C44;
+const int COLOR_551 = 0x373947;
+const int COLOR_552 = 0x433B4A;
+const int COLOR_553 = 0x41475C;
+const int COLOR_554 = 0x23180F;
+const int COLOR_555 = 0x8C2E00;
+const int COLOR_556 = 0xAB5205;
+const int COLOR_557 = 0xF9B315;
+const int COLOR_558 = 0xFFBB44;
+const int COLOR_559 = 0xBA580F;
+const int COLOR_560 = 0xEEAB13;
+const int COLOR_561 = 0x9C3200;
+const int COLOR_562 = 0xB94E00;
+const int COLOR_563 = 0x9C6545;
+const int COLOR_564 = 0x595959;
+const int COLOR_565 = 0x020000;
+const int COLOR_566 = 0xB44C03;
+const int COLOR_567 = 0xB25F00;
+const int COLOR_568 = 0xB75A00;
+const int COLOR_569 = 0xB65900;
+const int COLOR_570 = 0x913D1F;
+const int COLOR_571 = 0x0A0A0A;
+const int COLOR_572 = 0x3C3C3C;
+const int COLOR_573 = 0x3F3F3F;
+const int COLOR_574 = 0x414141;
+const int COLOR_575 = 0x111107;
+const int COLOR_576 = 0x713613;
+const int COLOR_577 = 0xAC5F08;
+const int COLOR_578 = 0xF5BD01;
+const int COLOR_579 = 0xE9A808;
+const int COLOR_580 = 0xC96401;
+const int COLOR_581 = 0xC25400;
+const int COLOR_582 = 0xAA5700;
+const int COLOR_583 = 0xD59A7D;
+const int COLOR_584 = 0x656065;
+const int COLOR_585 = 0x404235;
+const int COLOR_586 = 0x545453;
+const int COLOR_587 = 0xFFBC18;
+const int COLOR_588 = 0xA24900;
+const int COLOR_589 = 0xBC4E00;
+const int COLOR_590 = 0xCF5B10;
+const int COLOR_591 = 0x000900;
+const int COLOR_592 = 0x383F38;
+const int COLOR_593 = 0x4E5651;
+const int COLOR_594 = 0x504D46;
+const int COLOR_595 = 0x230000;
+const int COLOR_596 = 0xC3621B;
+const int COLOR_597 = 0xBF5700;
+const int COLOR_598 = 0xB55100;
+const int COLOR_599 = 0xBB5B00;
+const int COLOR_600 = 0xFFC858;
+const int COLOR_601 = 0x4D3B41;
+const int COLOR_602 = 0x443D34;
+const int COLOR_603 = 0x3F4146;
+const int COLOR_604 = 0x150600;
+const int COLOR_605 = 0xFDC300;
+const int COLOR_606 = 0xF1B425;
+const int COLOR_607 = 0xD15F1A;
+const int COLOR_608 = 0x0A0700;
+const int COLOR_609 = 0x443C48;
+const int COLOR_610 = 0x3B3D43;
+const int COLOR_611 = 0x424148;
+const int COLOR_612 = 0x1A0000;
+const int COLOR_613 = 0xB85204;
+const int COLOR_614 = 0xB16000;
+const int COLOR_615 = 0xBD5600;
+const int COLOR_616 = 0xEDB61C;
+const int COLOR_617 = 0xAF8357;
+const int COLOR_618 = 0x161116;
+const int COLOR_619 = 0x3D3F32;
+const int COLOR_620 = 0x43404B;
+const int COLOR_621 = 0x000E24;
+const int COLOR_622 = 0x2B49A9;
+const int COLOR_623 = 0x000212;
+const int COLOR_624 = 0x00052B;
+const int COLOR_625 = 0x010229;
+const int COLOR_626 = 0x484C42;
+const int COLOR_627 = 0x8E5E2F;
+const int COLOR_628 = 0xFFEC94;
+const int COLOR_629 = 0xB3754A;
+const int COLOR_630 = 0x00003B;
+const int COLOR_631 = 0x02008E;
+const int COLOR_632 = 0x000008;
+const int COLOR_633 = 0x484E54;
+const int COLOR_634 = 0x3E403E;
+const int COLOR_635 = 0x3F403F;
+const int COLOR_636 = 0x3C413C;
+const int COLOR_637 = 0x434041;
+const int COLOR_638 = 0x42423A;
+const int COLOR_639 = 0x160400;
+const int COLOR_640 = 0x847196;
+const int COLOR_641 = 0x2053F2;
+const int COLOR_642 = 0x000383;
+const int COLOR_643 = 0x000017;
+const int COLOR_644 = 0x434145;
+const int COLOR_645 = 0x413F3C;
+const int COLOR_646 = 0x4E5657;
+const int COLOR_647 = 0x000410;
+const int COLOR_648 = 0x07007C;
+const int COLOR_649 = 0x000191;
+const int COLOR_650 = 0x9E7A8F;
+const int COLOR_651 = 0x3962C3;
+const int COLOR_652 = 0x090946;
+const int COLOR_653 = 0x4C4A4D;
+const int COLOR_654 = 0x423C43;
+const int COLOR_655 = 0x3D3F31;
+const int COLOR_656 = 0x483F4B;
+const int COLOR_657 = 0x010615;
+const int COLOR_658 = 0x103AC1;
+const int COLOR_659 = 0xAE886D;
+const int COLOR_660 = 0x070083;
+const int COLOR_661 = 0x010100;
+const int COLOR_662 = 0x424046;
+const int COLOR_663 = 0x404041;
+const int COLOR_664 = 0x404037;
+const int COLOR_665 = 0x424348;
+const int COLOR_666 = 0x000295;
+const int COLOR_667 = 0xBF8591;
+const int COLOR_668 = 0x0B0861;
+const int COLOR_669 = 0x010099;
+const int COLOR_670 = 0x44423C;
+const int COLOR_671 = 0x414F40;
+const int COLOR_672 = 0x000030;
+const int COLOR_673 = 0x4C549B;
+const int COLOR_674 = 0x9E696E;
+const int COLOR_675 = 0x786D99;
+const int COLOR_676 = 0x00008E;
+const int COLOR_677 = 0x171662;
+const int COLOR_678 = 0x000200;
+const int COLOR_679 = 0x403F47;
+const int COLOR_680 = 0x433E53;
+const int COLOR_681 = 0x04040A;
+const int COLOR_682 = 0x3659CB;
+const int COLOR_683 = 0x3256D7;
+const int COLOR_684 = 0xAD8D70;
+const int COLOR_685 = 0x2651DC;
+const int COLOR_686 = 0x071588;
+const int COLOR_687 = 0x05040A;
+const int COLOR_688 = 0x000F03;
+const int COLOR_689 = 0x0B0011;
+const int COLOR_690 = 0x090610;
+const int COLOR_691 = 0x050900;
+const int COLOR_692 = 0x00080D;
+const int COLOR_693 = 0x080400;
+const int COLOR_694 = 0x070D08;
+const int COLOR_695 = 0x42413F;
+const int COLOR_696 = 0x3F413B;
+const int COLOR_697 = 0x403E3B;
+const int COLOR_698 = 0x394145;
+const int COLOR_699 = 0x443E38;
+const int COLOR_700 = 0x413F3A;
+const int COLOR_701 = 0x3F3F3E;
+const int COLOR_702 = 0x37404C;
+const int COLOR_703 = 0x453A3F;
+const int COLOR_704 = 0x444245;
+
+vector<vector<int>> gokuSpriteNormal = {
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_5, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_8, COLOR_9, COLOR_10, COLOR_11, COLOR_12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_17, COLOR_18, COLOR_19, COLOR_20, COLOR_21, COLOR_22, COLOR_23, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_26, COLOR_27, COLOR_28, COLOR_29, COLOR_30, COLOR_31, COLOR_32, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_35, COLOR_36, COLOR_37, COLOR_38, COLOR_39, COLOR_40, COLOR_41, COLOR_42, COLOR_43, COLOR_44, COLOR_45, COLOR_46, COLOR_47, COLOR_48, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_52, COLOR_53, COLOR_54, COLOR_55, COLOR_56, COLOR_57, COLOR_58, COLOR_59, COLOR_60, COLOR_61, COLOR_62, COLOR_63, COLOR_64, COLOR_65, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_69, COLOR_70, COLOR_71, COLOR_72, COLOR_73, COLOR_74, COLOR_75, COLOR_76, COLOR_77, COLOR_78, COLOR_79, COLOR_80, COLOR_81, COLOR_82, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_88, COLOR_33, COLOR_89, COLOR_90, COLOR_91, COLOR_92, COLOR_93, COLOR_94, COLOR_95, COLOR_96, COLOR_97, COLOR_98, COLOR_99, COLOR_100, COLOR_101, COLOR_102, COLOR_103, COLOR_104, COLOR_105, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_107, -1, COLOR_108, COLOR_109, COLOR_110, COLOR_111, COLOR_112, COLOR_113, COLOR_114, COLOR_115, COLOR_116, COLOR_117, COLOR_118, COLOR_119, COLOR_120, COLOR_121, COLOR_122, COLOR_103, COLOR_104, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_124, COLOR_125, COLOR_126, COLOR_127, COLOR_128, COLOR_129, COLOR_130, COLOR_42, COLOR_131, COLOR_132, COLOR_133, COLOR_134, COLOR_135, COLOR_136, COLOR_137, COLOR_138, COLOR_139, COLOR_103, COLOR_104, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_84, COLOR_141, COLOR_142, COLOR_143, COLOR_144, COLOR_145, COLOR_146, COLOR_76, COLOR_147, COLOR_148, COLOR_149, COLOR_150, COLOR_151, COLOR_152, COLOR_153, COLOR_154, COLOR_155, COLOR_156, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_159, COLOR_84, COLOR_160, COLOR_161, COLOR_162, COLOR_163, COLOR_164, COLOR_165, COLOR_166, COLOR_167, COLOR_168, COLOR_169, COLOR_170, COLOR_171, COLOR_172, COLOR_173, COLOR_174, COLOR_84, COLOR_175, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_158, COLOR_178, COLOR_179, COLOR_180, COLOR_181, COLOR_182, COLOR_183, COLOR_184, COLOR_185, COLOR_186, COLOR_187, COLOR_188, COLOR_189, COLOR_190, COLOR_191, COLOR_192, COLOR_193, COLOR_194, COLOR_195, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_199, COLOR_200, COLOR_201, COLOR_202, COLOR_203, COLOR_204, COLOR_205, COLOR_206, COLOR_207, COLOR_208, COLOR_209, COLOR_210, COLOR_211, COLOR_212, COLOR_213, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_216, COLOR_217, COLOR_218, COLOR_219, COLOR_220, COLOR_117, COLOR_221, COLOR_222, COLOR_223, COLOR_224, COLOR_225, COLOR_226, COLOR_227, COLOR_228, COLOR_229, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_232, -1, COLOR_233, COLOR_234, COLOR_235, COLOR_236, COLOR_237, COLOR_238, COLOR_239, COLOR_240, COLOR_241, COLOR_242, COLOR_243, COLOR_244, COLOR_104, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_247, COLOR_248, COLOR_249, COLOR_224, COLOR_250, COLOR_251, COLOR_252, COLOR_253, COLOR_254, COLOR_255, COLOR_256, COLOR_257, COLOR_258, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_260, COLOR_261, COLOR_262, COLOR_263, COLOR_264, COLOR_265, COLOR_266, COLOR_267, COLOR_268, COLOR_269, COLOR_270, COLOR_271, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_275, COLOR_276, COLOR_277, COLOR_278, COLOR_279, COLOR_280, COLOR_281, COLOR_282, COLOR_283, COLOR_284, COLOR_285, COLOR_286, COLOR_287, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_290, COLOR_291, COLOR_292, COLOR_293, COLOR_294, COLOR_295, COLOR_296, COLOR_297, COLOR_298, COLOR_299, COLOR_300, COLOR_301, COLOR_302, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_305, COLOR_306, COLOR_307, COLOR_308, COLOR_309, COLOR_310, COLOR_311, COLOR_312, COLOR_313, COLOR_314, COLOR_285, COLOR_315, COLOR_316, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_3, COLOR_319, COLOR_320, COLOR_321, COLOR_322, COLOR_323, COLOR_324, COLOR_325, COLOR_326, COLOR_327, COLOR_328, COLOR_329, COLOR_330, COLOR_331, COLOR_332, COLOR_333, COLOR_334, COLOR_335, COLOR_336, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_53, COLOR_339, COLOR_248, COLOR_340, COLOR_204, COLOR_341, COLOR_342, COLOR_343, COLOR_344, COLOR_345, COLOR_346, COLOR_347, COLOR_348, COLOR_349, COLOR_350, COLOR_351, COLOR_352, COLOR_353, COLOR_354,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_357, COLOR_358, COLOR_359, COLOR_360, COLOR_361, COLOR_362, COLOR_363, COLOR_364, COLOR_365, COLOR_366, COLOR_367, COLOR_368, COLOR_369, COLOR_370, COLOR_224, COLOR_371, COLOR_372, COLOR_373, COLOR_374,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_224, COLOR_377, COLOR_378, COLOR_379, COLOR_380, COLOR_381, COLOR_382, COLOR_383, COLOR_384, COLOR_211, COLOR_385, COLOR_386, COLOR_331, COLOR_387, COLOR_388, COLOR_389, COLOR_390, COLOR_391, COLOR_392,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_395, COLOR_396, COLOR_397, COLOR_398, COLOR_399, COLOR_400, COLOR_401, COLOR_402, COLOR_403, COLOR_404, COLOR_405, COLOR_406, COLOR_407, COLOR_408, COLOR_409, COLOR_410, COLOR_411, COLOR_412, COLOR_413,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_416, COLOR_417, COLOR_418, COLOR_221, COLOR_419, COLOR_420, COLOR_212, COLOR_384, COLOR_390, COLOR_221, COLOR_384, COLOR_421, COLOR_422, COLOR_423, COLOR_157, COLOR_424, COLOR_425, COLOR_426, COLOR_35,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, COLOR_428, COLOR_429, COLOR_430, COLOR_431, COLOR_432, COLOR_433, COLOR_434, COLOR_435, COLOR_436, COLOR_437, COLOR_438, COLOR_439, COLOR_440, COLOR_441, COLOR_442, COLOR_211, COLOR_443, COLOR_444, COLOR_215, COLOR_445, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, COLOR_447, COLOR_448, COLOR_449, COLOR_450, COLOR_451, COLOR_452, COLOR_453, COLOR_454, COLOR_455, COLOR_456, COLOR_457, COLOR_458, COLOR_459, COLOR_460, COLOR_461, COLOR_462, COLOR_463, COLOR_464, COLOR_177, COLOR_465, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, COLOR_467, COLOR_468, COLOR_469, COLOR_470, COLOR_471, COLOR_472, COLOR_473, COLOR_474, COLOR_475, COLOR_476, COLOR_477, COLOR_478, COLOR_479, COLOR_480, COLOR_481, COLOR_482, COLOR_483, COLOR_484, COLOR_285, COLOR_485, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_488, COLOR_489, COLOR_490, COLOR_491, COLOR_492, COLOR_493, COLOR_494, COLOR_495, COLOR_496, COLOR_497, COLOR_498, COLOR_499, COLOR_500, COLOR_501, COLOR_502, COLOR_503, COLOR_504, COLOR_505, COLOR_506, COLOR_507, COLOR_508, COLOR_509, COLOR_510, COLOR_511, -1, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_513, COLOR_514, COLOR_515, COLOR_516, COLOR_517, COLOR_518, COLOR_519, COLOR_520, COLOR_521, COLOR_522, COLOR_523, COLOR_524, COLOR_525, COLOR_526, COLOR_527, COLOR_528, COLOR_529, COLOR_530, COLOR_531, COLOR_532, COLOR_484, COLOR_533, COLOR_534, COLOR_535, -1, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_539, COLOR_540, COLOR_541, COLOR_542, COLOR_543, COLOR_544, COLOR_545, COLOR_546, COLOR_547, COLOR_548, COLOR_549, COLOR_550, COLOR_551, COLOR_552, COLOR_553, COLOR_554, COLOR_555, COLOR_556, COLOR_557, COLOR_558, COLOR_559, COLOR_560, COLOR_561, COLOR_562, COLOR_563, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_565, COLOR_456, COLOR_566, COLOR_567, COLOR_568, COLOR_569, COLOR_570, COLOR_571, -1, -1, -1, -1, -1, -1, -1, COLOR_574, COLOR_575, COLOR_576, COLOR_577, COLOR_578, COLOR_579, COLOR_580, COLOR_581, COLOR_582, COLOR_583, COLOR_584, COLOR_585, -1, -1, -1},
+    {-1, -1, COLOR_586, COLOR_390, COLOR_587, COLOR_588, COLOR_589, COLOR_590, COLOR_591, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_592, COLOR_593, COLOR_594, COLOR_595, COLOR_596, COLOR_597, COLOR_598, COLOR_599, COLOR_600, COLOR_467, COLOR_601, -1, -1, -1},
+    {-1, -1, COLOR_603, COLOR_305, COLOR_604, COLOR_605, COLOR_606, COLOR_607, COLOR_608, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_609, COLOR_610, COLOR_611, COLOR_612, COLOR_613, COLOR_614, COLOR_615, COLOR_616, COLOR_617, COLOR_618, COLOR_619, -1, -1, -1},
+    {-1, -1, COLOR_620, COLOR_621, COLOR_622, COLOR_623, COLOR_624, COLOR_625, COLOR_15, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_574, COLOR_626, COLOR_250, COLOR_627, COLOR_628, COLOR_629, COLOR_630, COLOR_631, COLOR_632, COLOR_633, COLOR_634, -1},
+    {-1, -1, COLOR_638, COLOR_639, COLOR_640, COLOR_641, COLOR_642, COLOR_643, COLOR_644, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_175, COLOR_645, COLOR_646, COLOR_647, COLOR_648, COLOR_649, COLOR_650, COLOR_651, COLOR_652, COLOR_653, -1},
+    {-1, -1, COLOR_657, COLOR_658, COLOR_659, COLOR_309, COLOR_660, COLOR_661, COLOR_662, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_663, COLOR_408, COLOR_664, COLOR_665, COLOR_647, COLOR_666, COLOR_667, COLOR_668, COLOR_669, COLOR_630, -1},
+    {-1, -1, COLOR_673, COLOR_674, COLOR_675, COLOR_676, COLOR_677, COLOR_678, COLOR_679, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_680, COLOR_681, COLOR_682, COLOR_683, COLOR_684, COLOR_685, COLOR_686, -1},
+    {-1, -1, COLOR_690, COLOR_691, COLOR_692, COLOR_693, COLOR_694, COLOR_695, COLOR_696, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_697, COLOR_698, COLOR_699, COLOR_700, COLOR_701, COLOR_702, COLOR_703, -1},
+};
+
+vector<vector<int>> gokuSpriteTransformed = {
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0xFFA0A0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_8, COLOR_9, COLOR_10, 0xFF9191, 0xFF8181, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0xFF7070, 0xFF6060, 0xFF5050, COLOR_20, 0xFF4040, 0xFF3030, 0xFF2020, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0xFF1010, COLOR_27, 0xFF0000, COLOR_29, 0xFFA0A0, 0xFF9191, 0xFF8181, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_35, COLOR_36, COLOR_37, 0xFF7070, 0xFF6060, 0xFF5050, COLOR_41, COLOR_42, COLOR_43, 0xFF4040, 0xFF3030, COLOR_46, COLOR_47, COLOR_48, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_52, COLOR_53, 0xFF2020, COLOR_55, 0xFF1010, 0xFF0000, COLOR_58, COLOR_59, COLOR_60, COLOR_61, 0xFFA0A0, 0xFF9191, COLOR_64, COLOR_65, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0xFF8181, 0xFF7070, 0xFF6060, COLOR_72, 0xFF5050, 0xFF4040, COLOR_75, COLOR_76, 0xFF3030, 0xFF2020, COLOR_79, 0xFF1010, COLOR_81, 0xFF0000, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_88, COLOR_33, 0xFFA0A0, 0xFF9191, 0xFF8181, COLOR_92, COLOR_93, 0xFF7070, COLOR_95, COLOR_96, COLOR_97, 0xFF6060, COLOR_99, 0xFF5050, 0xFF4040, 0xFF3030, 0xFF2020, 0xFF1010, COLOR_105, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_107, -1, COLOR_108, 0xFF0000, 0xFFA0A0, 0xFF9191, COLOR_112, COLOR_113, COLOR_114, COLOR_115, COLOR_116, COLOR_117, 0xFF8181, COLOR_119, COLOR_120, 0xFF7070, 0xFF6060, 0xFF2020, 0xFF1010, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_124, COLOR_125, 0xFF5050, 0xFF4040, 0xFF3030, 0xFF2020, COLOR_130, COLOR_42, COLOR_131, COLOR_132, COLOR_133, COLOR_134, 0xFF1010, COLOR_136, COLOR_137, 0xFF0000, 0xFFA0A0, 0xFF2020, 0xFF1010, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_84, 0xFF9191, 0xFF8181, COLOR_143, COLOR_144, 0xFF7070, 0xFF6060, COLOR_76, 0xFF5050, 0xFF4040, 0xFF3030, COLOR_150, 0xFF2020, 0xFF1010, 0xFF0000, 0xFFA0A0, 0xFF9191, COLOR_156, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_159, COLOR_84, COLOR_160, COLOR_161, COLOR_162, 0xFF8181, 0xFF7070, COLOR_165, 0xFF6060, 0xFF5050, 0xFF4040, 0xFF3030, 0xFF2020, 0xFF1010, 0xFF0000, 0xFFA0A0, COLOR_174, COLOR_84, COLOR_175, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_158, COLOR_178, COLOR_179, 0xFF9191, 0xFF8181, 0xFF7070, 0xFF6060, 0xFF5050, 0xFF4040, 0xFF3030, 0xFF2020, 0xFF1010, 0xFF0000, 0xFFA0A0, 0xFF9191, 0xFF8181, 0xFF7070, COLOR_194, COLOR_195, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_199, 0xFF6060, 0xFF5050, 0xFF4040, 0xFF3030, COLOR_204, COLOR_205, COLOR_206, COLOR_207, COLOR_208, COLOR_209, COLOR_210, COLOR_211, COLOR_212, COLOR_213, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_216, COLOR_217, COLOR_218, COLOR_219, COLOR_220, COLOR_117, COLOR_221, COLOR_222, COLOR_223, COLOR_224, COLOR_225, COLOR_226, COLOR_227, COLOR_228, COLOR_229, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, COLOR_232, -1, COLOR_233, COLOR_234, COLOR_235, COLOR_236, COLOR_237, COLOR_238, COLOR_239, COLOR_240, COLOR_241, COLOR_242, COLOR_243, COLOR_244, 0xFF1010, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_247, COLOR_248, COLOR_249, COLOR_224, COLOR_250, COLOR_251, COLOR_252, COLOR_253, COLOR_254, COLOR_255, COLOR_256, COLOR_257, COLOR_258, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_260, COLOR_261, COLOR_262, COLOR_263, COLOR_264, COLOR_265, COLOR_266, COLOR_267, COLOR_268, COLOR_269, COLOR_270, COLOR_271, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_275, COLOR_276, COLOR_277, COLOR_278, COLOR_279, COLOR_280, COLOR_281, COLOR_282, COLOR_283, COLOR_284, COLOR_285, COLOR_286, COLOR_287, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_290, COLOR_291, COLOR_292, COLOR_293, COLOR_294, COLOR_295, COLOR_296, COLOR_297, COLOR_298, COLOR_299, COLOR_300, COLOR_301, COLOR_302, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_305, COLOR_306, COLOR_307, COLOR_308, COLOR_309, COLOR_310, COLOR_311, COLOR_312, COLOR_313, COLOR_314, COLOR_285, COLOR_315, COLOR_316, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_3, COLOR_319, COLOR_320, COLOR_321, COLOR_322, COLOR_323, COLOR_324, COLOR_325, COLOR_326, COLOR_327, COLOR_328, COLOR_329, COLOR_330, COLOR_331, COLOR_332, COLOR_333, COLOR_334, COLOR_335, COLOR_336, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_53, COLOR_339, COLOR_248, COLOR_340, COLOR_204, COLOR_341, COLOR_342, COLOR_343, COLOR_344, COLOR_345, COLOR_346, COLOR_347, COLOR_348, COLOR_349, COLOR_350, COLOR_351, COLOR_352, COLOR_353, COLOR_354,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_357, COLOR_358, COLOR_359, COLOR_360, COLOR_361, COLOR_362, COLOR_363, COLOR_364, COLOR_365, COLOR_366, COLOR_367, COLOR_368, COLOR_369, COLOR_370, COLOR_224, COLOR_371, COLOR_372, COLOR_373, COLOR_374,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_224, COLOR_377, COLOR_378, COLOR_379, COLOR_380, COLOR_381, COLOR_382, COLOR_383, COLOR_384, COLOR_211, COLOR_385, COLOR_386, COLOR_331, COLOR_387, COLOR_388, COLOR_389, COLOR_390, COLOR_391, COLOR_392,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_395, COLOR_396, COLOR_397, COLOR_398, COLOR_399, COLOR_400, COLOR_401, COLOR_402, COLOR_403, COLOR_404, COLOR_405, COLOR_406, COLOR_407, COLOR_408, COLOR_409, COLOR_410, COLOR_411, COLOR_412, COLOR_413,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, -1, -1, -1, COLOR_416, COLOR_417, COLOR_418, COLOR_221, COLOR_419, COLOR_420, COLOR_212, COLOR_384, COLOR_390, COLOR_221, COLOR_384, COLOR_421, COLOR_422, COLOR_423, COLOR_157, COLOR_424, COLOR_425, COLOR_426, COLOR_35,-1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, COLOR_428, COLOR_429, COLOR_430, COLOR_431, COLOR_432, COLOR_433, COLOR_434, COLOR_435, COLOR_436, COLOR_437, COLOR_438, COLOR_439, COLOR_440, COLOR_441, COLOR_442, COLOR_211, COLOR_443, COLOR_444, COLOR_215, COLOR_445, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, COLOR_447, COLOR_448, COLOR_449, COLOR_450, COLOR_451, COLOR_452, COLOR_453, COLOR_454, COLOR_455, COLOR_456, COLOR_457, COLOR_458, COLOR_459, COLOR_460, COLOR_461, COLOR_462, COLOR_463, COLOR_464, COLOR_177, COLOR_465, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, -1, -1, COLOR_467, COLOR_468, COLOR_469, COLOR_470, COLOR_471, COLOR_472, COLOR_473, COLOR_474, COLOR_475, COLOR_476, COLOR_477, COLOR_478, COLOR_479, COLOR_480, COLOR_481, COLOR_482, COLOR_483, COLOR_484, COLOR_285, COLOR_485, -1, -1, -1, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_488, COLOR_489, COLOR_490, COLOR_491, COLOR_492, COLOR_493, COLOR_494, COLOR_495, COLOR_496, COLOR_497, COLOR_498, COLOR_499, COLOR_500, COLOR_501, COLOR_502, COLOR_503, COLOR_504, COLOR_505, COLOR_506, COLOR_507, COLOR_508, COLOR_509, COLOR_510, COLOR_511, -1, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_513, COLOR_514, COLOR_515, COLOR_516, COLOR_517, COLOR_518, COLOR_519, COLOR_520, COLOR_521, COLOR_522, COLOR_523, COLOR_524, COLOR_525, COLOR_526, COLOR_527, COLOR_528, COLOR_529, COLOR_530, COLOR_531, COLOR_532, COLOR_484, COLOR_533, COLOR_534, COLOR_535, -1, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_539, COLOR_540, COLOR_541, COLOR_542, COLOR_543, COLOR_544, COLOR_545, COLOR_546, COLOR_547, COLOR_548, COLOR_549, COLOR_550, COLOR_551, COLOR_552, COLOR_553, COLOR_554, COLOR_555, COLOR_556, COLOR_557, COLOR_558, COLOR_559, COLOR_560, COLOR_561, COLOR_562, COLOR_563, -1, -1, -1, -1, -1},
+    {-1, -1, COLOR_565, COLOR_456, COLOR_566, COLOR_567, COLOR_568, COLOR_569, COLOR_570, COLOR_571, -1, -1, -1, -1, -1, -1, -1, COLOR_574, COLOR_575, COLOR_576, COLOR_577, COLOR_578, COLOR_579, COLOR_580, COLOR_581, COLOR_582, COLOR_583, COLOR_584, COLOR_585, -1, -1, -1},
+    {-1, -1, COLOR_586, COLOR_390, COLOR_587, COLOR_588, COLOR_589, COLOR_590, COLOR_591, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_592, COLOR_593, COLOR_594, COLOR_595, COLOR_596, COLOR_597, COLOR_598, COLOR_599, COLOR_600, COLOR_467, COLOR_601, -1, -1, -1},
+    {-1, -1, COLOR_603, COLOR_305, COLOR_604, COLOR_605, COLOR_606, COLOR_607, COLOR_608, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_609, COLOR_610, COLOR_611, COLOR_612, COLOR_613, COLOR_614, COLOR_615, COLOR_616, COLOR_617, COLOR_618, COLOR_619, -1, -1, -1},
+    {-1, -1, COLOR_620, COLOR_621, COLOR_622, COLOR_623, COLOR_624, COLOR_625, COLOR_15, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_574, COLOR_626, COLOR_250, COLOR_627, COLOR_628, COLOR_629, COLOR_630, COLOR_631, COLOR_632, COLOR_633, COLOR_634, -1},
+    {-1, -1, COLOR_638, COLOR_639, COLOR_640, COLOR_641, COLOR_642, COLOR_643, COLOR_644, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_175, COLOR_645, COLOR_646, COLOR_647, COLOR_648, COLOR_649, COLOR_650, COLOR_651, COLOR_652, COLOR_653, -1},
+    {-1, -1, COLOR_657, COLOR_658, COLOR_659, COLOR_309, COLOR_660, COLOR_661, COLOR_662, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_663, COLOR_408, COLOR_664, COLOR_665, COLOR_647, COLOR_666, COLOR_667, COLOR_668, COLOR_669, COLOR_630, -1},
+    {-1, -1, COLOR_673, COLOR_674, COLOR_675, COLOR_676, COLOR_677, COLOR_678, COLOR_679, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_680, COLOR_681, COLOR_682, COLOR_683, COLOR_684, COLOR_685, COLOR_686, -1},
+    {-1, -1, COLOR_690, COLOR_691, COLOR_692, COLOR_693, COLOR_694, COLOR_695, COLOR_696, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, COLOR_697, COLOR_698, COLOR_699, COLOR_700, COLOR_701, COLOR_702, COLOR_703, -1},
+};
+#endif
